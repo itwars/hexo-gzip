@@ -10,8 +10,8 @@
   "keywords": ["website", "blog", "cms", "framework", "hexo"],
   "author": "Vincent RABAH <vincent.rabah@gmail.com> (http://it-wars.com - http://nodejs-news.com)",
   "license": {
-    "type": "MIT",
-    "url": "https://raw.github.com/itwars/hexo-gzip/master/LICENSE"
+    "type": "LGPL",
+    "url": "https://github.com/itwars/hexo-gzip/blob/master/COPYING"
   },
   "engines": {
     "hexo": "*"

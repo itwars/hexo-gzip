@@ -21,8 +21,17 @@ It automaticaly call generate, then, hexo-gzip.
 
 Feel free to fork, and report bugs!
 
-Vincent RABAH ([ITwars]|[NodeJS-News])
+
+Author
+
+Vincent RABAH (Twitter: @itwars - Websites: [ITwars]|[NodeJS-News])
+
+License
+
+LGPL. See [COPYING] for more details.
+
 
 [Hexo]: http://zespia.tw/hexo
 [ITwars]: http://it-wars.com
 [NodeJS-News]: http://nodejs-news.com
+[COPYING]: https://github.com/itwars/hexo-gzip/blob/master/COPYING

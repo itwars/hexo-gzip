@@ -2,6 +2,12 @@
 
 This plugin gzip files produced by Hexo, in order to serve pre-gzipped files with Nginx or Apache2, instead of gzipping them of the fly!
 
+For example in nginx.conf file just add:
+
+```
+gzip_static on;
+```
+
 ## Usage
 
 In the console just type :

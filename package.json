@@ -1,0 +1,21 @@
+{
+  "name": "hexo-gzip",
+  "version": "0.0.1",
+  "description": "Gzip console plugin for Hexo",
+  "main": "index",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/itwars/hexo-gzip.git"
+  },
+  "keywords": ["website", "blog", "cms", "framework", "hexo"],
+  "author": "Vincent RABAH <vincent.rabah@gmail.com> (http://it-wars.com - http://nodejs-news.com)",
+  "license": {
+    "type": "MIT",
+    "url": "https://raw.github.com/itwars/hexo-gzip/master/LICENSE"
+  },
+  "engines": {
+    "hexo": "*"
+  },
+  "dependencies": {
+  }
+}

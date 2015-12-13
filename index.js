@@ -3,9 +3,10 @@ hexo.extend.console.register( 'gzip', 'gzip content', function( args, callback) 
    var zlib = require('zlib');
    var gzip = zlib.createGzip('level=9');
    var fs = require('fs');
+   var log = this.log
    hexo.call('generate', function(err){
       if (err) return callback(err);
-      console.log('['+'info'.green+'] Now gzipping files ...');
+      log.info('Now gzipping files ...');
       var start = Date.now();
       var traverseFileSystem = function (currentPath) {
          var files = fs.readdirSync(currentPath);
@@ -18,7 +19,7 @@ hexo.extend.console.register( 'gzip', 'gzip content', function( args, callback) 
                   var inp = fs.createReadStream(currentFile);
                   var out = fs.createWriteStream(currentFile+'.gz');
                   inp.pipe(gzip).pipe(out);
-                  console.log('['+'create'.green+'] '+currentFile+'.gz');
+                  log.info(currentFile+'.gz');
                }
             }
            else if (stats.isDirectory()) {
@@ -29,6 +30,6 @@ hexo.extend.console.register( 'gzip', 'gzip content', function( args, callback) 
       traverseFileSystem(baseDir+'public');
       var finish = Date.now();
       var elapsed = (finish - start) / 1000;
-      console.log('['+'info'.green+'] gzipped in '+elapsed+'s');
+      log.info('gzipped in '+elapsed+'s');
    });
 });
